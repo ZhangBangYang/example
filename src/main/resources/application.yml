@@ -1,0 +1,9 @@
+spring:
+  data:
+    redis:
+      host: r-2zew3a2tvraf1pfrpfpd.redis.rds.aliyuncs.com
+      port: 6379
+      password: 9LBK1l06ZnUYUbe0
+      database: 25
+server:
+  port: 9000
