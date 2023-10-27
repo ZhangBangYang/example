@@ -44,6 +44,7 @@ public class DeductionJob {
                 String content = redis.opsForList().rightPop(RedisConstants.DEDUCTION_RECORDING);
                 DeductionInfo appPriceInfo = JSON.parseObject(content, DeductionInfo.class);
                 deductionService.headerDeduction(appPriceInfo);
+                // 你好
             }
         } catch (Exception e) {
             elog.error("扣款异常：error:{}", e.getMessage(), e);
